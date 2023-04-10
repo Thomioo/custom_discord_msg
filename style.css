@@ -1,0 +1,64 @@
+*{
+    user-select: none;
+}
+
+h2{
+    width: auto;
+    margin: auto;
+    font-size:400%;
+    font-family: Verdana;
+    text-align: center;
+}
+
+body{
+    width: 100%;
+    align-items: center;
+    background-color: powderblue;
+}
+
+.id{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin : auto;
+    margin-top: 30px;
+}
+
+input{
+    height: 50px;
+    width: 70%;
+    outline: none;
+    border: 2px solid black;
+    font-size: 200%;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+label{
+    margin-right: 10px; 
+    font-size: 220%;
+    margin-left: 10px;
+}
+
+button:hover{
+    scale: 110%;
+    cursor: pointer;
+}
+
+button{
+    font-size: 125%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 60px;
+    display: block;
+    border-radius: 10px;
+    background-color: aquamarine;
+    transition: all linear .05s;
+}
