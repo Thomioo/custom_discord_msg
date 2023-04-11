@@ -1,5 +1,6 @@
 function send()
 {
+    document.getElementById("").scale = 0.95;
     var id = document.getElementById("id").value;
     var site = document.getElementById("chnl").value;
     var msg = document.getElementById("msg").value;
