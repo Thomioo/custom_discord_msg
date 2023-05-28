@@ -1,32 +1,11 @@
-function send()
+var On = function()
 {
-    document.getElementById("btn").scale = 0.95;
-    var id = document.getElementById("id").value;
-    var site = document.getElementById("chnl").value;
-    var msg = document.getElementById("msg").value;
-
-    var payload = {
-        "content" : msg
-    }
-
-        // var s = fetch(site,
-        //     {
-        //         headers : header,
-        //         payload : payload,
-        //     })
-
-
-        var s = fetch(site, {
-            method: 'POST',
-            body: JSON.stringify(payload),
-            headers: {
-                'authorization' : id,
-                'Content-Type': 'application/json',
-            }
-          })
-        .then(data => console.log(data))
-        .then(function(){
-            document.getElementById("msg").value = null;
-        })
-        .catch(err => console.log("error: ", err))
+  // var orgSite = "http://192.168.2.241:8000/start";
+  var site = "http://" + document.getElementById("adress").value.toString() + ":8000/on";
+  fetch(site);
+}
+var Off = function()
+{
+  var site = "http://" + document.getElementById("adress").value.toString() + ":8000/off";
+  fetch(site);
 }
